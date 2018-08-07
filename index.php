@@ -106,9 +106,9 @@ $listar = $ver->fetchAll(PDO::FETCH_OBJ);
                                <button type="button" rel="tooltip" title="Editar"  class="btn btn-primary btn-link btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="<?php echo $visu->id;?>" data-whateverdesc="<?php echo $visu->descricao;?>">
                                 <i class="material-icons">edit</i>
                                 </button>
-                              <button type="button" rel="tooltip" title="Remover" class="btn btn-danger btn-link btn-sm">
+                             <a href="apagar.php?id=<?php echo $visu->id;  ?>"> <button type="submit" name="bnt-apg"   rel="tooltip" title="Remover" class="btn btn-danger btn-link btn-sm">
                                 <i class="material-icons">close</i>
-                              </button>
+                              </button> </a>
 
                               
                               
